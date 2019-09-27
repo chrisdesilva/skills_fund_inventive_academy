@@ -1,4 +1,4 @@
-import logo from "../images/logo_placeholder.png" // add school logo to images folder and import here
+import logo from "../images/logo_ia.jpg" // add school logo to images folder and import here
 
 export const applicationsLive = true // set to false if not currently accepting applications
 export const disabledLoanAppFormID = '69140c47-bb03-4a1b-b674-cc136fdea23d' // Hubspot ID for all disabled apply now lead captures
@@ -7,10 +7,10 @@ export const nextCohortStartDate = 'October 29, 2019'
 // ***** BEGIN TERMS AND FAQ INFO *****
 
 export const schoolInfo = { // term details section
-    interestRate36: '8.99%',
-    interestRate60: '10.99%',
-    APRRange36: 'XX.XX - XX.XX%',
-    APRRange60: 'XX.XX - XX.XX%',
+    interestRate36: '9.49%',
+    interestRate60: '11.46%',
+    APRRange36: '12.20%',
+    APRRange60: '13.19%',
     interestOnly: [
         { // for multiple examples of interest only, add items to interestOnly array
             programName: 'PROGRAM NAME',
@@ -30,13 +30,13 @@ export const schoolInfo = { // term details section
     ],
     immediateRepayment: [
         { // for multiple examples of immmediate repayment, add items to immediateRepayment array
-            programName: 'PROGRAM NAME',
-            APR36: 'XX.XX%',
-            financeCharge36: '$X,XXX.XX',
-            FullMonthlyPayment36: '$XXX.XX',
-            APR60: 'XX.XX%',
-            financeCharge60: '$X,XXX.XX',
-            FullMonthlyPayment60: '$XXX.XX',
+            programName: '',
+            APR36: '12.20%',
+            financeCharge36: '$1,991.39',
+            FullMonthlyPayment36: '$333.09',
+            APR60: '13.19%',
+            financeCharge60: '$3,710.86',
+            FullMonthlyPayment60: '$228.51',
             LoanExampleAmt: '$10,000',
             LoanExampleOFeeAmt: '$400',
             LoanExampleAmtPlusOFee: '$10,400'
@@ -47,14 +47,14 @@ export const schoolInfo = { // term details section
 export const faq = { // faq section
     costOfLiving: false, // true if at least one program has cost of living included
     costOfLivingPrograms: '', // leave as empty string is cost of living availability is the same across all programs
-    multCostOfLivingPrograms: true, // true if costOfLivingPrograms string has more than one program
-    interestOnly: true, // true if interest-only payments are an option
+    multCostOfLivingPrograms: false, // true if costOfLivingPrograms string has more than one program
+    interestOnly: false, // true if interest-only payments are an option
     immediateRepayment: true, // true if immediate repayment is an option
     multipleLoanLengths: true, // true if 36 and 60 month options are both available
-    multipleLoanTypes: true, // true if both IR and IO are available
+    multipleLoanTypes: false, // true if both IR and IO are available
     multiPrograms: true, // only true if there are multiple programs
-    onlinePrograms: false, // true if at least one program is remote/online
-    schoolHQState: 'WA',
+    onlinePrograms: true, // true if at least one program is remote/online
+    schoolHQState: 'TX',
     origFee: 0.04,
 
     // interest payment FAQ info
@@ -69,14 +69,14 @@ export const faq = { // faq section
     // max loan amounts by program for faq1
     loanRange: [
         {
-            programName: "PROGRAM 1",
-            maxAmount: "the max loan amount",
-            col: true,
+            programName: "Inventive Academy's Full Stack Immersive In-Person program",
+            maxAmount: "$13,000",
+            col: false,
             colAmount: "$6,000"
         },
         {
-            programName: "PROGRAM 2",
-            maxAmount: "$10,750",
+            programName: "Inventive Academy's Full Stack Immersive Online program",
+            maxAmount: "$11,000",
             col: false,
             colAmount: "$6,000"
         },
@@ -89,35 +89,35 @@ export const faq = { // faq section
 
 export const schoolLogo = logo // go to header.js if height needs adjustment
 
-export const schoolName = "SCHOOL_NAME"
+export const schoolName = "Inventive Academy"
 
-export const schoolURL = 'https://www.SCHOOLWEBSITE.com/' // update with url of school's website
+export const schoolURL = 'https://inventive.io/' // update with url of school's website
 
-export const skfURL = 'https://SCHOOLNAME.skills.fund' // update with Skills Fund url
+export const skfURL = 'https://inventive.skills.fund/' // update with Skills Fund url
 
-export const headline = "Learn to Code at SCHOOL NAME" // update headline as appropriate
+export const headline = "Learn to Code at Inventive Academy" // update headline as appropriate
 
 export const leadContent = {
     header: "Your last step on the path toward changing your career",
-    paragraph: `${schoolName} designs its programs to cover multiple stacks of programming languages to help graduates develop a diverse skill-set. ${schoolName} partners with Skills Fund to offer tuition${faq.costOfLiving ? ' and cost of living' : ''} financing so more students like you can access their program.`
+    paragraph: `${schoolName} designs its programs to provide students a foundation for a career in software development. ${schoolName} partners with Skills Fund to offer tuition${faq.costOfLiving ? ' and cost of living' : ''} financing so more students like you can access their program.`
 }
 
 export const threeStepCardText = {
     step1: "",
     step2: {
         header: "select your program",
-        text: "Choose between the Onsite Bootcamp, Online Full-Time Bootcamp, and Online Part-Time Bootcamp programs."
+        text: "Choose between the Full-Stack Immersive In-Person or Full-Stack Immersive Online programs."
     },
     step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`
 }
 
-export const netlifyFormName = 'SCHOOLNAME_contact'
+export const netlifyFormName = 'inventiveacademy_contact'
 
 export const GATracking = 'UA-68312423-1'
 
-export const hubspotFormId = "HUBSPOT_FORM_ID" // create Hubspot form, get form id after publishing
+export const hubspotFormId = "660631b9-aee4-4d9a-8bb9-2c8b1a1a2143" // create Hubspot form, get form id after publishing
 
-export const selectAProgram = "select_a_SCHOOLNAME_program" // update school name to match form field on Hubspot, *** change to "program_name" if only one program ***"
+export const selectAProgram = "select_a_inventiveacademy_program" // update school name to match form field on Hubspot, *** change to "program_name" if only one program ***"
 
 // ***** END GENERAL SCHOOL INFO ***** 
 
@@ -127,27 +127,26 @@ export const selectAProgram = "select_a_SCHOOLNAME_program" // update school nam
 export const defaultLoanAmount = 10000
 export const placeholder = '$10,000'
 export const interestRates = {
-    ir36: 8.99,
-    ir60: 10.99
+    ir36: 9.49,
+    ir60: 11.46
 }
 export const moreThanSixPrograms = false // set to true if there are 7 or more programs in the loan application. True will render a dropdown menu, false will render buttons for each program.
 
 export const programLoanInfo = [ // update with program names and corresponding loan URLs with market segment code from Master Loan Parameters
     {
-        name: "Program 1",
-        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=LENDERCODE1",
+        name: "Full-Stack Immersive In-Person",
+        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKINVTI18",
         loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 19495,
+            maxLoanAmt: 13000,
             loanTerm36: true,
             loanTerm60: true,
-            '0': { // interest-only 
-                k: 5, 
-                apr36: 11.16, 
-                apr60: 12.51
-            },
-            '1': null // immediate repayment
+            '0': null,
+            '1': {
+              apr36: 12.20,
+              apr60: 13.19
+            } 
         },
-        defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+        defaultLoanType: "1", // leave at 0 for interest-only, set to 1 for immediate repayment
         showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
         showLoanTypes: false, // true if both IR and IO are available
         locations: ["Metro 1", "Metro 2", "Metro 3"],
@@ -155,62 +154,32 @@ export const programLoanInfo = [ // update with program names and corresponding 
           {
             location: "Metro 1",
             loanInfo: { // // match loanInfo to Program 1 above
-              maxLoanAmt: 19495,
+              maxLoanAmt: 13000,
               loanTerm36: true,
               loanTerm60: true,
-              '0': { 
-                  k: 5, 
-                  apr36: 11.16, 
-                  apr60: 12.51
-              },
-              '1': null
+              '0': null,
+              '1': {
+                apr36: 12.20,
+                apr60: 13.19
+              }
             }
-          },
-          {
-            location: "Metro 2",
-            loanInfo: {
-                maxLoanAmt: 15545,
-                loanTerm36: true,
-                loanTerm60: true,
-                '0': { 
-                  k: 5, 
-                  apr36: 11.16, 
-                  apr60: 12.51
-                },
-                '1': null
-            }
-          },
-          {
-            location: "Metro 3",
-            loanInfo: {
-                maxLoanAmt: 20545,
-                loanTerm36: true,
-                loanTerm60: true,
-                '0': { 
-                  k: 5, 
-                  apr36: 11.16, 
-                  apr60: 12.51
-                },
-                '1': null
-              },
-            }
+          }
         ]
     },
     {
-        name: "Program 2",
-        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=LENDERCODE2",
+        name: "Full-Stack Immersive Online",
+        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKINVTO18",
         loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 10995,
+            maxLoanAmt: 11000,
             loanTerm36: true,
             loanTerm60: true,
-            '0': { 
-                k: 5, 
-                apr36: 11.16, 
-                apr60: 12.51
-            },
-            '1': null
+            '0': null,
+            '1': {
+              apr36: 12.20,
+              apr60: 13.19
+            }
         },
-        defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+        defaultLoanType: "1", // leave at 0 for interest-only, set to 1 for immediate repayment
         showMetros: false,
         showLoanTypes: false,
         locations: ["Metro 1", "Metro 2"],
@@ -218,112 +187,22 @@ export const programLoanInfo = [ // update with program names and corresponding 
             {
               location: "Metro 1",
               loanInfo: { // match loanInfo to Program 2 loanInfo above
-                maxLoanAmt: 10995,
+                maxLoanAmt: 11000,
                 loanTerm36: true,
                 loanTerm60: true,
-                '0': { 
-                    k: 5, 
-                    apr36: 11.16, 
-                    apr60: 12.51
-                },
-                '1': null
-              }
-            },
-            {
-              location: "Metro 2",
-              loanInfo: {
-                  maxLoanAmt: 15545,
-                  loanTerm36: true,
-                  loanTerm60: true,
-                  '0': { 
-                    k: 5, 
-                    apr36: 11.16, 
-                    apr60: 12.51
-                  },
-                  '1': null
+                '0': null,
+                '1': {
+                  apr36: 12.20,
+                  apr60: 13.19
+                }
               }
             }
-          ]
-    },
-    {
-        name: "Program 3",
-        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=LENDERCODE3",
-        loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 15995,
-            loanTerm36: true,
-            loanTerm60: true,
-            '0': { 
-                k: 5, 
-                apr36: 11.16, 
-                apr60: 12.51
-            },
-            '1': {
-              apr36: 11.25, 
-              apr60: 12.55
-          }
-        },
-        defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
-        showMetros: false,
-        showLoanTypes: false,
-        locations: ["Metro A", "Metro B", "Metro C"],
-        metros: [
-            {
-              location: "Metro A",
-              loanInfo: { // match loanInfo to Program 3 loanInfo above
-                maxLoanAmt: 15995,
-                loanTerm36: true,
-                loanTerm60: true,
-                '0': { 
-                    k: 5, 
-                    apr36: 11.16, 
-                    apr60: 12.51
-                },
-                '1': {
-                    apr36: 11.25, 
-                    apr60: 12.55
-                }
-              }
-            },
-            {
-              location: "Metro B",
-              loanInfo: {
-                  maxLoanAmt: 15545,
-                  loanTerm36: true,
-                  loanTerm60: true,
-                  '0': { 
-                    k: 5, 
-                    apr36: 11.16, 
-                    apr60: 12.51
-                  },
-                  '1': {
-                    apr36: 11.25, 
-                    apr60: 12.55
-                }
-              }
-            },
-            {
-              location: "Metro C",
-              loanInfo: {
-                  maxLoanAmt: 20545,
-                  loanTerm36: true,
-                  loanTerm60: true,
-                  '0': { 
-                    k: 5, 
-                    apr36: 11.16, 
-                    apr60: 12.51
-                  },
-                  '1': {
-                    apr36: 11.25, 
-                    apr60: 12.55
-                }
-                },
-              }
           ]
     }
 ]
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
-export const programMaxText = "Choose the loan amount that works best for you. Borrow up to your metro's max (see table below) for the PROGRAM 1, up to $14,995 for the PROGRAM 2 Bootcamp tuition, and up to $9,995 for the PROGRAM 3 Bootcamp tuition."
+export const programMaxText = "Choose the loan amount that works best for you. Borrow up to $13,000 for the Full-Stack In-Person program tuition or up to $11,000 for the Full-Stack Online program tuition."
 
 export const paymentTable = {
     headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
